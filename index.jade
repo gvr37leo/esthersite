@@ -15,7 +15,10 @@ html
         .container-fluid(stle='position:absolute')
             .row
                 .col-xs-12
-                    h1 Muziektherapie Esther Kluck
+                    h1 
+                        |Muziektherapie 
+                        br
+                        |Esther Kluck
                 .col-xs-12 
                     div(style='position:relative; bottom:10px;  background-color:rgba(255,255,255,0.5);box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);border: 2px solid transparent;display:inline-block; padding:10px; margin-top:10px;')
                         p
@@ -35,7 +38,7 @@ html
             +photo('resources/trees.jpg')
             +photo('resources/dunes.jpg')
             +photo('resources/car.jpg')
-    canvas(style='position:fixed;top:0;left:0;width:100%;height:100%;z-index:-1;').background
+    canvas(style='position:fixed;top:0;left:0;z-index:-1;').background
     script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
     script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js')
     script(src='utils.js')
