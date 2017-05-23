@@ -11,33 +11,61 @@ html
     link(rel='stylesheet', type='text/css', href='css/custom.css')
     title
   body(style='background-color:#ececec')
-    .jumbotron(style='background-image:url(resources/esthercello.jpg);background-position: center;background-size: cover;')
+    .jumbotron(style='background-image:url(resources/dunes.jpg);background-position: center;background-size: cover;padding-top: 0px;')
         .container-fluid(stle='position:absolute')
             .row
-                .col-xs-12
-                    h1(style='color:#337ab7') 
+                .col-xs-4 
+                .col-xs-4
+                    h1(style='color:yellow') 
                         |Muziektherapie 
                         br
-                        |Esther Kluck
-                .col-xs-12 
+                        |Esther&nbsp;Kluck
+            .row
+                .col-xs-8 
+                .col-xs-4 
                     div(style='position:relative; bottom:10px;  background-color:rgba(255,255,255,0.8);box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);border: 2px solid transparent;display:inline-block; padding:10px; margin-top:10px;')
-                        p
-                            |email adres:
+                        p(style='color:yellow;')
+                            |email adres: 
                             a(href='mailto:esther.vaktherapie@gmail.com') esther.vaktherapie@gmail.com
                             br
-                            |tel:
-                            a(href='tel:0638065976') 0638065976
+                            |tel: 
+                            a(href='tel:0638065976') 06-38065976
                             br
-                            |muziek therapie site:
-                            a(href='muziektherapie.nl') muziektherapie.nl
+                            |muziektherapie site: 
+                            a(href='http://muziektherapie.nl/') muziektherapie.nl
+                            br
+                            |FVB: 
+                            a(href='https://www.vaktherapie.nl/') vaktherapie.nl
     .container-fluid
         .row
-            +photo('resources/river.jpg')
+            +photo('resources/esthercello.jpg')
             +photo('resources/kleinpiano.jpg')
-            +photo('resources/estherklein.jpg')
-            +photo('resources/trees.jpg')
-            +photo('resources/dunes.jpg')
-            +photo('resources/car.jpg')
+        .row
+            .col-md-6
+                    .panel.panel-default(style='box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.2); margin:30px;')
+                        .panel-body
+                            .row
+                                .col-md-6
+                                    img(src='resources/friends.jpg' style='border-radius:4px; height:218px;').img-responsive
+                                .col-md-6
+                                    h2(style='color:red') Esther Kluck-Walpot
+                                    h2(style='color:green') Praktijk voor Muziektherapie Deventer
+            +photo('resources/estherband.jpg')
+        .row
+            +photo('resources/river.jpg')
+            .col-md-6
+                .row
+                    .col-md-6
+                        .panel.panel-default(style='box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.2); margin:30px;')
+                            .panel-body
+                                img(src='resources/moeder.jpg' style='border-radius:4px; width:200px').img-responsive
+                    .col-md-6
+                        h2(style='color:orange') Muziek maakt gezond
+                        h2(style='color:purple') Muziek is de kortste weg naar je gevoel
+                        img(src='resources/djembe.png' style='border-radius:4px; width:200px').img-responsive
+                        
+
+            
     canvas(style='position:fixed;top:0;left:0;z-index:-1;').background
     script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
     script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js')
